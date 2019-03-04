@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600i,700');
+
+*{
+font-family: "Montserrat";
+font-weight:400;
+}
+/* --------------------------------------NAVBAR-------------------------------------- */
+.nav-container{
+ justify-content: flex-end;
+}
+.navbar-local{
+  font-size: 20px
+}
+.navbar-local a{
+  color: #fff;
+  font-size: 20px
+}
+.navbar-local a:hover{
+  color: gray
+}
+/* --------------------------------------SECTION PORTADA-------------------------------------- */
+.portada-section{
+  height: 100vh;
+  background-color: transparent
+}
+.portada-background{
+  background-image: url("../img/portada-background.png");
+  background-size: cover;
+  filter:brightness(30%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.portada{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 200px
+}
+.portada-title{
+  margin-top: -50px
+}
+.portada-title h1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight:700;
+  font-size: 80px;
+  line-height: 100px;
+  margin: 0;
+  text-transform: uppercase;
+  color: #fff
+}
+
+.portada-title h1 span{
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* --------------------------------------SECTION SERVICIOS-------------------------------------- */
+
+.servicios-section{
+  height: 800px;
+  background-color: #FAFAFA;
+  padding-top: 40px
+}
+
+.servicios-header{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.servicios-title{
+  text-align: center;
+}
+
+.servicios-title h2{
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.servicios-subtitle{
+  width: 500px
+}
+
+.servicios-subtitle h3{
+  font-size: 12px;
+}
+
+.servicios-content{
+  padding-top: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.servicios-card{
+    margin: 0 auto;
+    text-align: center;
+    width: 350px;
+    height: auto;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.servicios-card-header{
+  background-image: url("../img/card-1.png");
+  height: 200px;
+}
+
+.servicios-card-body{
+  padding: 20px;
+  background: #fff;
+}
+
+.servicios-card-body h2{
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.servicios-card-body p{
+
+  font-size: 16px;
+
+}
+
+/* --------------------------------------SECTION PROCESOS-------------------------------------- */
+.proceso-section{
+  height: 600px;
+  background-color: #f80051;
+  padding-top: 80px
+}
+
+.proceso-header{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.proceso-title{
+  text-align: center;
+  color: #fff
+}
+
+.proceso-title h2{
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.proceso-title hr{
+  background-color: #fff;
+
+}
+.proceso-subtitle{
+  width: 500px
+}
+
+.proceso-subtitle h3{
+  font-size: 12px;
+}
+
+.proceso-card{
+    margin: 0 auto;
+    text-align: center;
+    width: auto;
+    height: 100px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 50px
+}
+
+.proceso-card p{
+  font-size: 14px;
+}
+/* --------------------------------------SECTION FOOTER-------------------------------------- */
+
+.footer-section{
+  background-color: #081E35;
+  height: 300px;
+  padding: 20px
+}
+
+.footer-header{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer-title{
+  text-align: center;
+  color: #fff
+}
+
+.footer-title h2{
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
