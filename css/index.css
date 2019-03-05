@@ -1,7 +1,36 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600i,700');
 
+@font-face {
+font-family: 'Avenir Next LT Pro Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Avenir Next LT Pro Bold'), url('fonts/AvenirNextLTPro-Bold.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Avenir Next LT Pro Demi';
+font-style: normal;
+font-weight: normal;
+src: local('Avenir Next LT Pro Demi'), url('fonts/AvenirNextLTPro-Demi.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Avenir Next LT Pro Medium Condensed';
+font-style: normal;
+font-weight: normal;
+src: local('Avenir Next LT Pro Medium Condensed'), url('fonts/AvenirNextLTPro-MediumCn.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Avenir Next LT Pro Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Avenir Next LT Pro Regular'), url('fonts/AvenirNextLTPro-Regular.woff') format('woff');
+}
+
 *{
-font-family: "Montserrat";
+font-family: "Avenir Next LT Pro Regular";
 font-weight:400;
 }
 /* --------------------------------------NAVBAR-------------------------------------- */
@@ -71,28 +100,22 @@ font-weight:400;
   margin-top: -140px
 }
 .portada-title h1{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Avenir Next LT Pro Bold', sans-serif;
   font-weight:700;
   font-size: 80px;
   line-height: 100px;
   margin: 0;
   text-transform: uppercase;
   color: #fff;
-  animation: welcome 1s ease-out ;
+
 }
 
-@keyframes welcome {
-  from {opacity: 0;
-  line-height: 0px;
-  font-size: 0px
-}
-  to {opacity: 100px;}
-}
+
 
 .portada-title h1 span{
   position: absolute;
-  font-weight: 600;
-  font-style: italic;
+  font-family: 'Avenir Next LT Pro Bold', sans-serif;
+  font-weight:700;
   overflow: hidden;
   animation: spanAnimation 6s linear infinite;
   opacity: 0
@@ -139,11 +162,16 @@ font-weight:400;
   color: white;
   border-color: transparent;
   background-image: linear-gradient(to right top, #f80051, #f1005f, #e9096b, #df1877, #d32481);
-  box-shadow: 0 10px 30px rgba(0,0,0,.10), 0 6px 6px rgba(0,0,0,0.10);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   margin-top: 24px
 }
 
 @media (max-width:992px) {
+  .boton{
+    width: 300px;
+    height: 100px;
+    font-size: 40px;
+  }
   .portada{
     padding-left: 70px
   }
@@ -181,13 +209,15 @@ font-weight:400;
 }
 
 .servicios-title h2{
+  font-family: "Avenir Next LT Pro Demi";
   font-weight: 700;
   font-size: 58px;
   text-transform: uppercase;
 }
 
 .servicios-subtitle{
-  width: 500px
+  margin: 0 auto;
+  width: 850px;
 }
 
 .servicios-subtitle h3{
@@ -205,15 +235,27 @@ font-weight:400;
     text-align: center;
     width: 350px;
     height: auto;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 
+}
+.servicios-card-header-fondo{
+  background-image: linear-gradient(to top, #f93e7b, #fa3471, #fa2867, #f9195c, #f80051);
+  height: auto;
+  width: auto;
 }
 .servicios-card-header{
   background-image: url("../img/card-1.png");
   height: 300px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  background-size: cover;
+  opacity: 0.2
 }
+.servicios-card-header i {
+    font-size: 150px;
+    margin-top: 80px;
+}
+
 
 .servicios-card-body{
   padding: 20px;
@@ -222,6 +264,7 @@ font-weight:400;
 }
 
 .servicios-card-body h2{
+  font-family: 'Avenir Next LT Pro Medium Condensed';
   font-weight: 700;
   font-size: 20px;
   text-transform: uppercase;
@@ -241,6 +284,10 @@ font-weight:400;
     width: 750px;
     height: auto;
     margin-bottom: 50px
+  }
+  .servicios-card-header i {
+      font-size: 300px;
+      margin-top: 150px;
   }
   .servicios-title h2 {
       font-size: 80px;
@@ -272,9 +319,16 @@ font-weight:400;
 
 /* --------------------------------------SECTION PROCESOS-------------------------------------- */
 .proceso-section{
-  height: 2000px;
-  background-color: #f80051;
-  padding-top: 190px;
+  height: 1240px;
+  background-image: linear-gradient(to top, #f93e7b, #fa3471, #fa2867, #f9195c, #f80051);
+  padding-top: 150px;
+}
+
+.proceso-content{
+  padding-top: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  border-radius: 5px;
 }
 
 .proceso-header{
@@ -290,6 +344,7 @@ font-weight:400;
 }
 
 .proceso-title h2{
+  font-family: "Avenir Next LT Pro Demi";
   font-weight: 700;
   font-size: 58px;
   text-transform: uppercase;
@@ -299,7 +354,8 @@ font-weight:400;
 
 }
 .proceso-subtitle{
-  width: 500px
+  margin: 0 auto;
+  width: 850px;
 }
 
 .proceso-subtitle h3{
@@ -311,55 +367,76 @@ font-weight:400;
     margin: 0 auto;
     text-align: center;
     width: auto;
-    height: 320px;
+    height: 160px;
+    /* background-image: linear-gradient(to right top, #282d4e, #53346d, #8d2e7a, #c91370, #f80051); */
     background-color: #fff;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.01), 0 10px 10px rgba(0,0,0,0.01);
     border-radius: 5px;
     margin-bottom: 40px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-left: -200px;
+    color: #000
 }
 
 .proceso-card p{
-    font-size: 50px;
-    text-transform: uppercase;
+    font-size: 20px;
+
 }
 
-.proceso-card-number{
-    margin: 0 auto;
-    text-align: center;
-    width: auto;
-    height: 320px;
-    border-radius: 5px;
-    margin-bottom: 40px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-right: -200px;
+.proceso-card h3{
+    font-size: 110px;
+    color: #f80051
 }
 
-.proceso-card-number p{
-  font-size: 200px;
-  color: #fff
+.proceso-card i{
+  font-size: 110px;
+  color: #f80051;
 }
 
-.inverse-number{
-  margin-right: 0px;
-  margin-left: -200px;
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.inverse-card{
-  margin-left: 0px;
-  margin-right: -200px;
+
+@media (max-width:992px) {
+
+  .proceso-section{
+    height: 3500px;
+  }
+
+  .proceso-card p {
+    font-size: 64px;
+    margin-bottom: 2rem;
+  }
+
+  .proceso-title h2 {
+      font-size: 80px;
+  }
+  .proceso-subtitle h3{
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .proceso-card{
+    height: 600px;
+  }
+
+
 }
+
+
 /* --------------------------------------SECTION FOOTER-------------------------------------- */
 
 .footer-section{
   background-color: #081E35;
-  height: 300px;
-  padding: 20px
+  height: auto;
+  padding: 20px;
+  padding-top: 60px
 }
 
 .footer-header{
@@ -375,7 +452,94 @@ font-weight:400;
 }
 
 .footer-title h2{
+  font-family: "Avenir Next LT Pro Demi";
   font-weight: 700;
-  font-size: 40px;
+  font-size: 58px;
   text-transform: uppercase;
+}
+
+.footer-subtitle{
+  margin: 0 auto;
+  width: 850px;
+}
+
+.footer-subtitle h3{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-subtitle h4{
+  font-size: 10px;
+  margin-bottom: 30px;
+}
+
+.footer-card{
+  background-color: #0d1a27;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  padding: 20px;
+  color: #fff
+}
+
+.mini-footer{
+  width: auto;
+  padding: 10px;
+  height: auto;
+  background-color: #f80051
+}
+
+.mini-footer p{
+  margin: 0;
+  color: #fff
+}
+
+.mini-footer i{
+  margin: 0;
+  color: #fff;
+  font-size: 22px;
+  margin-left: 20px;
+}
+
+.icons{
+  text-align: right;
+}
+
+
+@media (max-width:992px) {
+
+  .footer-section {
+    padding-top: 100px;
+  }
+
+  .footer-title h2 {
+      font-size: 80px;
+  }
+  .footer-subtitle h3{
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  .footer-subtitle h4{
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .footer-card label {
+      font-size: 42px;
+  }
+
+  .footer-card .form-control {
+    font-size: 32px;
+    height: 80px;
+
+}
+.mini-footer p{
+  font-size: 30px
+}
+
+.mini-footer i{
+  font-size: 30px;
+  margin-top: 7px;
+}
+
 }
